@@ -155,7 +155,8 @@ gem "structured_warnings", "~> 0.4.0"
 
 # catch exceptions and send them to any airbrake compatible backend
 # don't require by default, instead load on-demand when actually configured
-gem "airbrake", "~> 13.0.0", require: false
+gem 'airbrake', '~> 13.0.0', require: false
+gem 'airbrake-ruby', git: 'https://github.com/alexhicks/airbrake-ruby', ref: '5373a774810e08632e26d5eb14dd7b35c9a3d190'
 
 gem "md_to_pdf", git: "https://github.com/opf/md-to-pdf", ref: "8f14736a88ad0064d2a97be108fe7061ffbcee91"
 gem "prawn", "~> 2.4"
