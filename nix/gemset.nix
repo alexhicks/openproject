@@ -1,3 +1,4 @@
+src:
 {
   actioncable = {
     dependencies = ["actionpack" "activesupport" "nio4r" "websocket-driver"];
