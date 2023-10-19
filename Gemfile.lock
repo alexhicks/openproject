@@ -3,8 +3,6 @@ GIT
   revision: 5373a774810e08632e26d5eb14dd7b35c9a3d190
   ref: 5373a774810e08632e26d5eb14dd7b35c9a3d190
   specs:
-    airbrake-ruby (6.2.2)
-      rbtree3 (~> 0.7)
 
 GIT
   remote: https://github.com/crohr/turbo_tests.git
