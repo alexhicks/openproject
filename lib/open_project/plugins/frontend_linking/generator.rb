@@ -64,7 +64,7 @@ module ::OpenProject::Plugins
 
           # Removing the current linked directory and recreate
           #FileUtils.remove_dir(target_dir, force: true)
-          FileUtils.rm(Dir.glob("#{target_dir}/*", force: true)
+          FileUtils.rm(Dir.glob("#{target_dir}/*"), force: true)
           #FileUtils.mkdir_p(target_dir)
 
           plugins.each do |name, path|
