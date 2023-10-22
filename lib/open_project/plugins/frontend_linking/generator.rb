@@ -63,15 +63,16 @@ module ::OpenProject::Plugins
           puts "Cleaning linked target directory #{target_dir}"
 
           # Removing the current linked directory and recreate
-          FileUtils.remove_dir(target_dir, force: true)
-          FileUtils.mkdir_p(target_dir)
+          #FileUtils.remove_dir(target_dir, force: true)
+          FileUtils.rm(Dir.glob("#{target_dir}/*", force: true)
+          #FileUtils.mkdir_p(target_dir)
 
           plugins.each do |name, path|
             source = File.join(path, "frontend", "module")
             target = File.join(target_dir, name)
 
             puts "Linking frontend of OpenProject plugin #{name} to #{target}."
-            FileUtils.ln_sf(source, target)
+            FileUtils.cp_r(source, target)
           end
 
           generate_plugin_module(all_angular_frontend_plugins)
