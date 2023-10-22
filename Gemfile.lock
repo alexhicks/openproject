@@ -1,8 +1,10 @@
 GIT
   remote: https://github.com/alexhicks/airbrake-ruby
-  revision: 5373a774810e08632e26d5eb14dd7b35c9a3d190
-  ref: 5373a774810e08632e26d5eb14dd7b35c9a3d190
+  revision: 64437757f247de6489de3adac65e1f9ef53578fb
+  ref: 64437757f247de6489de3adac65e1f9ef53578fb
   specs:
+    airbrake-ruby (6.2.2)
+      rbtree3 (~> 0.6)
 
 GIT
   remote: https://github.com/crohr/turbo_tests.git
@@ -334,7 +336,7 @@ GEM
     afm (0.2.2)
     airbrake (13.0.4)
       airbrake-ruby (~> 6.0)
-    appsignal (3.4.12)
+    appsignal (3.4.13)
       rack
     ast (2.4.2)
     attr_required (1.0.2)

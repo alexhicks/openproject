@@ -277,9 +277,11 @@ src:
     groups = ["default"];
     platforms = [];
     source = {
-      remotes = ["https://rubygems.org"];
-      sha256 = "1g1gvvbzbh0kiinw4w0sxaggxdn5wz689dbsssvf2qz76vxk8gi9";
-      type = "gem";
+      fetchSubmodules = false;
+      rev = "64437757f247de6489de3adac65e1f9ef53578fb";
+      sha256 = "0sy8k24555vc86n2m49ljzv8b4c039zc42n74jyy7kplw0nyiamn";
+      type = "git";
+      url = "https://github.com/alexhicks/airbrake-ruby";
     };
     version = "6.2.2";
   };
