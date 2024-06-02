@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/alexhicks/airbrake-ruby
+  revision: 64437757f247de6489de3adac65e1f9ef53578fb
+  ref: 64437757f247de6489de3adac65e1f9ef53578fb
+  specs:
+    airbrake-ruby (6.2.2)
+      rbtree3 (~> 0.7)
+
+GIT
   remote: https://github.com/citizensadvice/capybara_accessible_selectors
   revision: 347bbe06cb420416855e80bb4e3a3016b2d5872c
   branch: main
@@ -326,10 +334,6 @@ GEM
       public_suffix (>= 2.0.2, < 6.0)
     aes_key_wrap (1.1.0)
     afm (0.2.2)
-    airbrake (13.0.4)
-      airbrake-ruby (~> 6.0)
-    airbrake-ruby (6.2.2)
-      rbtree3 (~> 0.6)
     android_key_attestation (0.3.0)
     appsignal (3.7.4)
       rack
@@ -1166,7 +1170,7 @@ DEPENDENCIES
   acts_as_list (~> 1.1.0)
   acts_as_tree (~> 2.9.0)
   addressable (~> 2.8.0)
-  airbrake (~> 13.0.0)
+  airbrake-ruby!
   appsignal (~> 3.0)
   auto_strip_attributes (~> 2.5)
   awesome_nested_set (~> 3.6.0)
@@ -1360,4 +1364,4 @@ RUBY VERSION
    ruby 3.3.1p55
 
 BUNDLED WITH
-   2.5.10
+   2.5.9

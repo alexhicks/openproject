@@ -32,7 +32,7 @@ source "https://rubygems.org"
 # then we can use the new bundler syntax `ruby file: '.ruby-version'`.
 # https://github.com/heroku/heroku-buildpack-ruby/issues/1408#issuecomment-1841596215
 
-ruby File.read(".ruby-version").strip
+ruby '3.3.1'
 
 gem "actionpack-xml_parser", "~> 2.0.0"
 gem "activemodel-serializers-xml", "~> 1.0.1"
@@ -155,7 +155,7 @@ gem "structured_warnings", "~> 0.4.0"
 
 # catch exceptions and send them to any airbrake compatible backend
 # don't require by default, instead load on-demand when actually configured
-gem "airbrake", "~> 13.0.0", require: false
+gem 'airbrake-ruby', git: 'https://github.com/alexhicks/airbrake-ruby', ref: '64437757f247de6489de3adac65e1f9ef53578fb', require: false
 
 gem "md_to_pdf", git: "https://github.com/opf/md-to-pdf", ref: "8f14736a88ad0064d2a97be108fe7061ffbcee91"
 gem "prawn", "~> 2.4"
